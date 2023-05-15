@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/910ce80589.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Simple Home Page</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <a href="">mamondots.</a>
+            </div>
+            <div class="menu">
+               <p class="phone"><i class="fa-solid fa-phone"></i>  +8801646286477</p>
+               <img src="img/menu.png">
+            </div>
+       </header>
+       <main>
+          <div class="content">
+               <h4 class="title">Enter a World of</h4>
+               <h2 class="head-title">VIRTUAL REALITY</h2>
+               <h4 class="sub-title">Gaming Experience</h4>
+          </div>
+             <div class="line-img">
+                  <img src="img/Lines.png">
+             </div>
+             <div class="hero-img">
+                  <img src="img/Hero Image.png">
+             </div>
+             <div class="boxes">
+                 <div class="box">
+                    <h2 class="box-title">Suspendisse potenti.</h2>
+                    <p class="box-details">
+                        Suspendisse potenti. In eget augue egestas, gravida libero eu, luctus ipsum. Aliquam non pulvinar ex.
+                    </p>
+                 </div>
+                 <button class="box-btn">VIEW GAMES</button>
+             </div>
+             <div class="side-menu">
+                <ul>
+                    <li><a href="" class="active">Home</a></li>
+                    <li><a href="">Games</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Locations</a></li>
+                    <li><a href="">Get Help</a></li>
+                </ul>
+             </div>
+             <div class="circle-img circle1">
+                 <img src="img/circleText.png">
+             </div>
+             <div class="circle-img circle2">
+                 <img src="img/circleText2.png">
+             </div>
+       </main>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+          let animation = anime({
+     targets: 'header',
+     translateX:[-40,0],
+     opacity:[0,1],
+     duration: 1500,
+     easing: 'easeInOutExpo',
+     });
+
+     anime({
+     targets: '.content .title',
+     translateX:[-40,0],
+     opacity:[0,1],
+     duration: 1800,
+     easing: 'easeInOutExpo',
+     });
+     anime({
+     targets: '.content .head-title',
+     translateX:[40,0],
+     opacity:[0,1],
+     duration: 1800,
+     easing: 'easeInOutExpo',
+     });
+     anime({
+     targets: '.content .sub-title',
+     translateX:[-40,0],
+     opacity:[0,1],
+     duration: 1800,
+     easing: 'easeInOutExpo',
+     });
+     anime({
+     targets: '.line-img',
+     translateY:[80,0],
+     opacity:[0,1],
+     duration: 1200,
+     easing: 'easeInOutExpo',
+     });
+     anime({
+     targets: '.hero-img',
+     translateY:[80,0],
+     opacity:[0,1],
+     duration: 1800,
+     easing: 'easeInOutExpo',
+     });
+     anime({
+     targets: '.boxes',
+     translateX:[-80,0],
+     opacity:[0,1],
+     duration: 2000,
+     easing: 'easeInOutExpo',
+     });
+     anime({
+     targets: '.circle1',
+     translateX:[40,0],
+     opacity:[0,1],
+     duration: 2000,
+     easing: 'easeInOutExpo',
+     });
+     anime({
+     targets: '.circle2',
+     translateX:[-40,0],
+     opacity:[0,1],
+     duration: 2000,
+     easing: 'easeInOutExpo',
+     });
+     anime({
+     targets: '.side-menu',
+     translateX:[-40,0],
+     opacity:[0,1],
+     duration: 2000,
+     easing: 'easeInOutExpo',
+     });
+
+    </script>
+</body>
+</html>
